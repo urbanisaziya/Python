@@ -1,0 +1,5 @@
+A = int(input())
+B = int(input())
+N = int(input())
+total = (A * N * 100) + (B * N)
+print(total // 100, total % 100)
