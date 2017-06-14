@@ -1,14 +1,15 @@
 n = int(input())
-n1 = 0
+n1 = 1
 n2 = 1
-d = 1
+d = 2
 if n == 0:
-  print(0)
+    print(0)
+elif n <= 2:
+    print(1)
 else:
-    while n2 <= n: 
-        if n ==n2:
-            print(d)
-            break
-        n1, n2 = n2, n1 + n2
+    while d < n:
+        b = n1
+        n1 = n2
+        n2 = n1 + b
         d += 1
-
+    print(n2)
