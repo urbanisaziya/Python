@@ -1,12 +1,14 @@
 K = int(input())
 N = 1
-M = N
+m = N
 n = N
-d = 1
+count = 0
 while N <= K:
-    n = N % 10
-    M = N //10
-    N +=1
-    if n == M:
-      d +=1
-    print(d)
+    n = N // 10
+    m = N % 10
+    if n == m or n ==0:
+        count += 1
+    N += 1
+print(count)
+
+#not work
