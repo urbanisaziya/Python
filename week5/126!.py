@@ -1,3 +1,12 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
+if a + b + c + d != 0:
+    print(0)
 for i in range(1, 1000):
-    if i == (i // 10) * (i % 10) * 2:
+    if a == b == c == d == 0:
+        print(i)
+    elif a * (i ** 3) + b * (i ** 2) + c * i + d == 0:
         print(i)

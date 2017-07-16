@@ -1,0 +1,6 @@
+A = list(map(int, input().split()))
+k, C = input().split()
+k = int(k)
+C = int(C)
+A.insert(k, C)
+print(*A)
